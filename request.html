@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request a Project | MARK-NEWTON WEB STUDIO</title>
+
+    <meta
+        name="description"
+        content="Submit your project requirements to MARK-NEWTON WEB STUDIO for websites, online stores, graphics, video editing, branding, social media management, digital marketing and custom projects."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+<header class="navbar">
+    <div class="container nav-content">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="MARK-NEWTON WEB STUDIO">
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+            <a href="request.html" class="nav-button">Start a Project</a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Open menu" type="button">
+            ☰
+        </button>
+
+    </div>
+
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="request.html">Start a Project</a>
+    </div>
+</header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+
+            <span class="section-label">START YOUR PROJECT</span>
+
+            <h1>
+                Tell Us About Your
+                <span>Project</span>
+            </h1>
+
+            <p>
+                Give us the details about what you need and we'll review
+                your request and get back to you with the next steps.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- REQUEST FORM -->
+    <main class="request-section">
+
+        <div class="container">
+
+            <form id="projectRequestForm" method="post">
+
+                <div class="form-honeypot" aria-hidden="true">
+                    <label for="website">Leave this field empty</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+
+                <!-- CLIENT INFORMATION -->
+                <div class="form-card">
+
+                    <div class="form-heading">
+                        <span>01</span>
+
+                        <div>
+                            <h2>Client Information</h2>
+                            <p>Tell us how we can contact you.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="fullName">
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="businessName">
+                                Business / Brand Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="businessName"
+                                name="businessName"
+                                placeholder="Enter business or brand name"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="whatsapp">
+                                WhatsApp Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="whatsapp"
+                                name="whatsapp"
+                                placeholder="e.g. 0812 345 6789"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="socialHandle">
+                                Social Media Handle
+                            </label>
+
+                            <input
+                                type="text"
+                                id="socialHandle"
+                                name="socialHandle"
+                                placeholder="@yourbusiness"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="location">
+                                Location
+                            </label>
+
+                            <input
+                                type="text"
+                                id="location"
+                                name="location"
+                                placeholder="City / State"
+                            >
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE -->
+                <div class="form-card">
+
+                    <div class="form-heading">
+                        <span>02</span>
+
+                        <div>
+                            <h2>What Do You Need?</h2>
+                            <p>Select the main service you are interested in.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            Select Service *
+                        </label>
+
+                        <select id="service" name="service" required>
+
+                            <option value="">
+                                Choose a service
+                            </option>
+
+                            <option value="website">
+                                Website Development
+                            </option>
+
+                            <option value="ecommerce">
+                                E-commerce / Online Store
+                            </option>
+
+                            <option value="graphics">
+                                Graphics & Flyer Design
+                            </option>
+
+                            <option value="video">
+                                Video Editing
+                            </option>
+
+                            <option value="branding">
+                                Social Media Branding
+                            </option>
+
+                            <option value="management">
+                                Social Media Management
+                            </option>
+
+                            <option value="marketing">
+                                Digital Marketing
+                            </option>
+
+                            <option value="custom">
+                                Other / Custom Project
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PACKAGE -->
+                <div
+                    class="form-card hidden"
+                    id="packageSection"
+                >
+
+                    <div class="form-heading">
+
+                        <span>03</span>
+
+                        <div>
+                            <h2>Choose Your Package</h2>
+                            <p>
+                                Select the package that best fits your needs.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="packageOptions"
+                        class="package-options"
+                    >
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICE REQUIREMENTS -->
+                <div
+                    class="form-card hidden"
+                    id="requirementsSection"
+                >
+
+                    <div class="form-heading">
+
+                        <span>04</span>
+
+                        <div>
+                            <h2>Project Requirements</h2>
+                            <p>
+                                Tell us more about what you want us to create.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div id="dynamicRequirements">
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT DETAILS -->
+                <div class="form-card">
+
+                    <div class="form-heading">
+
+                        <span>05</span>
+
+                        <div>
+                            <h2>Project Details</h2>
+                            <p>
+                                Give us any additional information we should know.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="projectDescription">
+                            Describe Your Project *
+                        </label>
+
+                        <textarea
+                            id="projectDescription"
+                            name="projectDescription"
+                            rows="6"
+                            placeholder="Tell us what you want us to create..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="deadline">
+                                Preferred Deadline
+                            </label>
+
+                            <select id="deadline" name="deadline">
+
+                                <option value="">
+                                    Select a timeframe
+                                </option>
+
+                                <option value="asap">
+                                    ASAP
+                                </option>
+
+                                <option value="1-week">
+                                    Within 1 week
+                                </option>
+
+                                <option value="1-2-weeks">
+                                    1–2 weeks
+                                </option>
+
+                                <option value="2-4-weeks">
+                                    2–4 weeks
+                                </option>
+
+                                <option value="flexible">
+                                    I'm flexible
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="budget">
+                                Estimated Budget
+                            </label>
+
+                            <select id="budget" name="budget">
+
+                                <option value="">
+                                    Prefer not to say
+                                </option>
+
+                                <option value="under-25k">
+                                    Under ₦25,000
+                                </option>
+
+                                <option value="25k-50k">
+                                    ₦25,000 – ₦50,000
+                                </option>
+
+                                <option value="50k-100k">
+                                    ₦50,000 – ₦100,000
+                                </option>
+
+                                <option value="100k-150k">
+                                    ₦100,000 – ₦150,000
+                                </option>
+
+                                <option value="150k-plus">
+                                    ₦150,000+
+                                </option>
+
+                                <option value="custom">
+                                    Not sure / Need a quote
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="reference">
+                            Reference / Inspiration Link
+                        </label>
+
+                        <input
+                            type="url"
+                            id="reference"
+                            name="reference"
+                            placeholder="https://example.com"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- FILE UPLOADS -->
+                <div class="form-card">
+
+                    <div class="form-heading">
+
+                        <span>06</span>
+
+                        <div>
+                            <h2>Upload Your Files</h2>
+                            <p>
+                                Upload photos, logos, and documents relevant
+                                to your project.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="files">Choose Files</label>
+
+                        <input
+                            type="file"
+                            id="files"
+                            multiple
+                            accept=".jpg,.jpeg,.png,.gif,.webp,.heic,.heif,.pdf,.doc,.docx"
+                        >
+
+                        <small>
+                            JPG, PNG, GIF, WebP, HEIC, PDF, DOC, or DOCX. Maximum 5 MB per file and 10 MB total.
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <input type="hidden" id="fileUploads" name="fileUploads" value="[]">
+
+
+                <!-- AGREEMENT -->
+                <div class="form-card agreement-card">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="agreement"
+                            name="agreement"
+                            required
+                        >
+
+                        <span>
+                            I confirm that the information provided is
+                            accurate and I understand that additional
+                            requirements outside my selected package may
+                            attract additional charges.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+                <div class="form-submit">
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        REQUEST A PROJECT
+                    </button>
+
+                    <p id="formMessage" role="status" aria-live="polite"></p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+                    <img
+                        src="images/logo.png"
+                        alt="MARK-NEWTON WEB STUDIO"
+                        class="footer-logo"
+                    >
+
+                    <p>
+                        Building digital solutions that help
+                        businesses and individuals grow.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h3>Quick Links</h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                </div>
+
+                <div>
+                    <h3>Services</h3>
+
+                    <a href="services.html">Website Development</a>
+                    <a href="services.html">Online Stores</a>
+                    <a href="services.html">Graphics & Flyer Design</a>
+                    <a href="services.html">Video Editing</a>
+                    <a href="services.html">Social Media Branding</a>
+                    <a href="services.html#social-media-management">Social Media Management</a>
+                    <a href="services.html">Digital Marketing</a>
+                </div>
+
+                <div>
+                    <h3>Contact</h3>
+
+                    <a href="mailto:marknewtonwebstudio@gmail.com">
+                        marknewtonwebstudio@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 MARK-NEWTON WEB STUDIO. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
